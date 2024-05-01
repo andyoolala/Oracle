@@ -6,7 +6,7 @@ col module for a15
 col event for a30
 select * from (
 select
-(se.SID),ss.username,ss.machine,ss.module,ss.status,ss.sql_id,ss.event,ss.last_call_et,se.VALUE/100 cpu_usage_sec
+(se.SID),ss.username,ss.machine,ss.module,ss.status,ss.sql_id,ss.sql_child_number,ss.event,ss.last_call_et,se.VALUE/100 cpu_usage_sec
 from v$session ss,v$sesstat se,
 v$statname sn, v$process p, v$sql q
 where
